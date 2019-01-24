@@ -11,7 +11,8 @@ npm install vue-auto-complete-quill --save
 ```
 yarn add vue-auto-complete-quill --save
 ```
-
+## homepage
+[https://github.com/liCat/vue-autocomplete-quill](https://github.com/liCat/vue-autocomplete-quill)
 ## quick start
 ### 用法1：
 in main.js
@@ -127,7 +128,7 @@ in component
 
 ```
 
-用法2：
+###用法2：
 直接在组件中引入单个组件
 ```
 <template>
