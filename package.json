@@ -8,14 +8,18 @@
   "main": "dist/vueAutoCompleteQuill.js",
   "repository": {
     "type": "git",
-    "url": "git@github.com:ElemeFE/element.git"
+    "url": "https://github.com/liCat/vue-autocomplete-quill"
   },
-  "homepage": "http://element.eleme.io",
+  "homepage": "https://github.com/liCat/vue-autocomplete-quill/",
   "keywords": [
-    "eleme",
     "vue",
-    "components"
+    "quill",
+    "auto",
+    "complete"
   ],
+  "bugs": {
+    "url": "https://github.com/liCat/vue-autocomplete-quill/issues"
+  },
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
