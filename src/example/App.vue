@@ -6,8 +6,6 @@
       :debounce="1000"
       size="small"
       @input="handleInput"
-      @fetch-list="fetchList"
-      :recommendListLoading="recommendListLoading"
       :fetchList="fetchList"
       :recommendList="recommendList"
       item-class-name="listItem"

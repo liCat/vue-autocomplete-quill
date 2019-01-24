@@ -1,11 +1,11 @@
 {
   "name": "vue-auto-complete-quill",
   "description": "vue 富文本编辑器，具有自动补全功能。",
-  "version": "1.0.1",
+  "version": "1.0.4",
   "author": "keli <670550188@qq.com>",
   "license": "MIT",
   "private": false,
-  "main": "dist/vueAutoCompleteQuill.js",
+  "main": "dist/index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/liCat/vue-autocomplete-quill"

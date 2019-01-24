@@ -37,8 +37,6 @@ in component
   <div id="app">
     <auto-complete-quill
       :disabled="false"
-      :list-width="300"
-      :auto-complete-timeout="1000"
       size="small"
       @input="handleInput"
       @fetch-list="fetchList"
@@ -47,7 +45,6 @@ in component
       :recommendList="recommendList"
       item-class-name="listItem"
       item-text-key="text"
-      :list-z-index='50'
       :content="msg">
       <div slot="loading"><i class="fa fa-spinner fa-spin" aria-hidden="true"></i></div>
     </auto-complete-quill>
@@ -60,7 +57,6 @@ in component
     data() {
       return {
         msg: 'Welcome to quill auto complete component',
-        recommendListLoading: false,
         recommendList: [],
         fetchList(textBeforeCursor, cursorIndex, wordBeforeCursor, sentenceBeforeCursor) {
           return new Promise((resolve, reject) => {
@@ -139,11 +135,9 @@ in component
     <auto-complete-quill
       :disabled="false"
       :list-width="300"
-      :auto-complete-timeout="1000"
       size="small"
       @input="handleInput"
       @fetch-list="fetchList"
-      :recommendListLoading="recommendListLoading"
       :fetchList="fetchList"
       :recommendList="recommendList"
       item-class-name="listItem"

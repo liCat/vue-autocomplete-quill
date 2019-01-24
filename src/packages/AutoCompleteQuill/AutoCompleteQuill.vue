@@ -251,7 +251,7 @@
       toggleSelectLi(sign) {
         return function () {
           if (!this.listShow) return true
-          else if (this.recommendListLoading) return false
+          else if (this.fetchLoading) return false
           else {
             this.selectedDex += sign
             if (this.selectedDex < 0) this.selectedDex = this.recommendList.length - 1
@@ -262,7 +262,7 @@
       },
       keySelectConfirm() {
         if (!this.listShow) return true
-        else if (this.recommendListLoading) return false
+        else if (this.fetchLoading) return false
         else {
           this.selectLi(this.selectedDex)
         }
@@ -270,7 +270,7 @@
       escKey() {
         clearTimeout(this.timeoutInstance)
         this.listShow = false
-        this.recommendListLoading = false
+        this.fetchLoading = false
         this.quill.setSelection(this.lastFocus)
         this.$emit('recommendHide',this.quill)
       }
